@@ -25,7 +25,7 @@ function Header() {
         </Button>
 
         <Button className="bg-alfa-orange lg:text-lg lg:p-5 font-bold hover:bg-white hover:text-alfa-orange hover:border-[0.5px] hover:border-alfa-orange border border-transparent">
-          Contact Us
+          <Link href="/contact-us">Contact Us</Link>
         </Button>
       </div>
     </header>
