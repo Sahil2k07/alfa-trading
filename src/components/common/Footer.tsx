@@ -15,7 +15,6 @@ function Footer() {
             <p>
               Global Trading | Industrial Solutions | Scientific Equipements
             </p>
-            <p>Dubai Multi Commodities Center (DMCC), UAE</p>
           </div>
         </section>
 
@@ -31,7 +30,7 @@ function Footer() {
         </section>
 
         <section className="text-center flex flex-col gap-3">
-          <h4 className="text-white font-bold">Get in Touch</h4>
+          <h4 className="text-white font-bold">Contact & Social Media</h4>
           <Link
             href={`tel:${phone}`}
             className="flex justify-center gap-2 items-center"
