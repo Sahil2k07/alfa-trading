@@ -11,11 +11,11 @@ function SubHeader() {
 
       <div className="flex xl:px-40 justify-center items-center lg:gap-16 xl:gap-24">
         <Image
-          src="/header.webp"
+          src="/Global.png"
           width={500}
           height={520}
           alt="Picture of the author"
-          className="hidden lg:block"
+          className="hidden lg:block rounded-2xl shadow-xl/30"
         />
 
         <div className="flex flex-col gap-5 justify-center items-center">

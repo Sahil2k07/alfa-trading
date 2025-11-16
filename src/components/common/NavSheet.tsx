@@ -18,10 +18,21 @@ function NavSheet() {
 
       <SheetContent side="left">
         <nav className="flex flex-col gap-6 text-alfa-orange mt-10 text-lg font-medium text-center">
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About Us</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/sectors-we-serve">Sectors We Serve</Link>
+          <SheetClose asChild>
+            <Link href="/">Home</Link>
+          </SheetClose>
+
+          <SheetClose asChild>
+            <Link href="/about-us">About Us</Link>
+          </SheetClose>
+
+          <SheetClose asChild>
+            <Link href="/services">Services</Link>
+          </SheetClose>
+
+          <SheetClose asChild>
+            <Link href="/sectors-we-serve">Sectors We Serve</Link>
+          </SheetClose>
         </nav>
 
         <SheetFooter className="mt-auto">

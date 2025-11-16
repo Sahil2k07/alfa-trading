@@ -4,7 +4,7 @@ import NavSheet from "./NavSheet";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between sm:px-12 md:px-24 lg:px-36 py-3 px-6 items-center">
+    <nav className="flex justify-between sm:px-12 md:px-24 lg:px-36 py-3 px-6 items-center sticky top-0 z-50 bg-white">
       <div>
         <NavSheet />
         <nav className="hidden sm:flex text-gray-500 font-semibold gap-5 md:gap-8 lg:gap-12">
