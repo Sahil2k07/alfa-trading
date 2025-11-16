@@ -10,7 +10,10 @@ const NotFoundPage = () => (
       The page you are looking for might have been removed, had its name
       changed, or is temporarily unavailable.
     </p>
-    <button className="bg-indigo-corporate text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 flex items-center space-x-2">
+    <button
+      type="button"
+      className="bg-indigo-corporate text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 flex items-center space-x-2"
+    >
       <Link href={"/"}>
         <span className="text-xl">←</span>
         <span>Return to Homepage</span>

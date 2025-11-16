@@ -160,8 +160,8 @@ const SectorsPage = () => {
                 Key Focuses:
               </h3>
               <ul className="list-none text-gray-600 space-y-2">
-                {sector.focuses.map((focus, focusIndex) => (
-                  <li key={focusIndex} className="flex items-start text-lg">
+                {sector.focuses.map((focus) => (
+                  <li key={focus} className="flex items-start text-lg">
                     <span className="text-indigo-corporate text-xl mr-2 mt-1">
                       →
                     </span>

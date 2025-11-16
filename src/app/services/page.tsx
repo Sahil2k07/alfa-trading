@@ -57,9 +57,9 @@ const Services = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {serviceData.map((service, index) => (
+            {serviceData.map((service) => (
               <div
-                key={index}
+                key={service.title}
                 className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-amber-brand text-center"
               >
                 <span className="text-4xl text-indigo-corporate mb-3 block">
