@@ -6,7 +6,7 @@ function Header() {
     <header className="bg-[url('/Hero.png')] flex flex-col justify-center items-center p-20 bg-cover bg-center bg-no-repeat py-24 md:py-32 lg:py-48 xl:py-64 px-6 gap-6 md:gap-12">
       <div className="flex flex-col gap-6 text-center max-w-7xl">
         <h1 className="font-bold text-white text-4xl lg:text-5xl">
-          Global Trading.
+          Global Trading.{" "}
           <span className="text-alfa-orange">Trusted Solutins.</span>
           <br />
           Superior Quality

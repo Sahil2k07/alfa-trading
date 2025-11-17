@@ -1,4 +1,4 @@
-const PRIMARY_COLOR = "#ff8d28";
+const PRIMARY_COLOR = "#CC7823";
 const DARK_TEXT_COLOR = "#111827";
 const NA_COLOR = "#dc2626";
 
