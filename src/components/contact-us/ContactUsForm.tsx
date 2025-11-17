@@ -3,36 +3,26 @@
 import { toast } from "sonner";
 
 function ContactUsForm() {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formElement = e.currentTarget;
-    const formData = new FormData(formElement);
+    const plainData = Object.fromEntries(new FormData(formElement));
 
-    try {
-      const response = await fetch("/api/contact-us", {
+    toast.promise(
+      fetch("/api/contact-us", {
         method: "POST",
-        body: JSON.stringify(formData),
-      }).then((res) => res.json());
-
-      if (!response.success) {
-        toast.error(response.message || "Something went wrong", {
-          position: "bottom-right",
-        });
-        return;
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(plainData),
+      }).then((res) => res.json()),
+      {
+        loading: "Submitting...",
+        success: (data) => data.message || "We received the message",
+        error: "Something went wrong",
       }
+    );
 
-      toast.success(response?.message || "We received the message", {
-        position: "top-right",
-      });
-
-      formElement.reset();
-    } catch (error) {
-      console.error(error);
-      toast.error((error as Error)?.message || "Something went wrong", {
-        position: "bottom-right",
-      });
-    }
+    formElement.reset();
   };
 
   return (
