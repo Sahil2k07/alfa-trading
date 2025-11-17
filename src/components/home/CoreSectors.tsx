@@ -25,7 +25,7 @@ function CoreSectors() {
   return (
     <section className="bg-[url('/Sector.png')] bg-cover bg-center bg-no-repeat p-8 lg:p-16 flex flex-col gap-16">
       <h2 className="text-center font-bold text-white text-2xl lg:text-4xl">
-        <span className="inline-block border-b-2 border-white pb-4 px-10">
+        <span className="inline-block border-b-4 border-white pb-4 px-10">
           Our Core Sectors
         </span>
       </h2>

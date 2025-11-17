@@ -2,8 +2,9 @@ import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
 function Footer() {
-  const phone: string = "+919876543210";
-  const email: string = "sublimeweb.in@gmail.com";
+  const phone: string = "+971 55 2268150";
+  const email: string = " info@alfatradingco.com";
+
   return (
     <footer className="bg-alfa-blue text-gray-400 p-10 flex flex-col gap-7 text-center">
       <div className="flex flex-col gap-7 md:gap-14 md:flex-row justify-around md:items-baseline w-full max-w-5xl mx-auto">
