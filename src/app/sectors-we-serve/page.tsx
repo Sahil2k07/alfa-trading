@@ -127,7 +127,7 @@ const SectorsPage = () => {
 
   return (
     <div className="py-20 max-w-7xl mx-auto px-4">
-      <h1 className="text-5xl font-extrabold text-indigo-corporate mb-4 text-center">
+      <h1 className="text-5xl font-extrabold text-alfa-blue mb-4 text-center">
         Our Industry Expertise
       </h1>
       <p className="text-xl text-center text-gray-600 mb-16 max-w-4xl mx-auto">
@@ -161,8 +161,11 @@ const SectorsPage = () => {
               </h3>
               <ul className="list-none text-gray-600 space-y-2">
                 {sector.focuses.map((focus) => (
-                  <li key={focus} className="flex items-start text-lg">
-                    <span className="text-indigo-corporate text-xl mr-2 mt-1">
+                  <li
+                    key={focus}
+                    className="flex items-center justify-start text-lg"
+                  >
+                    <span className="text-indigo-corporate text-xl mr-2 mt-1 pb-2">
                       →
                     </span>
                     <span className="text-base">{focus}</span>

@@ -1,3 +1,5 @@
+import ContactUsForm from "@/components/contact-us/ContactUsForm";
+
 function ContactUs() {
   return (
     <div className="bg-gray-50 text-gray-800">
@@ -12,162 +14,36 @@ function ContactUs() {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* FORM SECTION */}
-            <div className="lg:col-span-2 bg-white p-8 rounded-xl shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Send Us a Message
-              </h2>
-
-              <form action="#" method="POST" className="space-y-6">
-                {/* Name + Email */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      required
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-corporate focus:border-indigo-corporate"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      required
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-corporate focus:border-indigo-corporate"
-                    />
-                  </div>
-                </div>
-
-                {/* Company + Phone */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="company"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Company
-                    </label>
-                    <input
-                      type="text"
-                      name="company"
-                      id="company"
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-corporate focus:border-indigo-corporate"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Phone
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-corporate focus:border-indigo-corporate"
-                    />
-                  </div>
-                </div>
-
-                {/* Sector */}
-                <div>
-                  <label
-                    htmlFor="sector"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Sector of Interest
-                  </label>
-                  <select
-                    id="sector"
-                    name="sector"
-                    defaultValue=""
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-corporate focus:border-indigo-corporate"
-                  >
-                    <option value="" disabled>
-                      Select a Sector
-                    </option>
-                    <option>Agriculture</option>
-                    <option>Scientific & Lab Supplies</option>
-                    <option>Commodities</option>
-                    <option>Education & Technology</option>
-                    <option>Energy</option>
-                    <option>Engineering Projects</option>
-                    <option>Health Supplements</option>
-                    <option>Safety & Security</option>
-                    <option>Textile Machinery</option>
-                    <option>Workshop Equipment</option>
-                  </select>
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-corporate focus:border-indigo-corporate"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-md text-base font-medium rounded-md text-white bg-amber-brand hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-brand transition duration-300"
-                >
-                  Submit Inquiry
-                </button>
-              </form>
-            </div>
+            <ContactUsForm />
 
             {/* CONTACT DETAILS */}
             <div className="lg:col-span-1 space-y-8">
-              <div className="bg-indigo-corporate text-white p-8 rounded-xl shadow-lg">
+              <div className="bg-indigo-corporate text-alfa-blue p-8 rounded-xl shadow-lg">
                 <h2 className="text-3xl font-bold mb-4">Contact Details</h2>
 
                 <address className="not-italic space-y-4">
                   <p className="text-lg font-semibold">
                     Alfa Trading House DMCC
                   </p>
-                  <p className="text-lg">
+                  <p className="text-lg text-gray-600">
                     Dubai Multi Commodities Centre (DMCC), UAE
                   </p>
 
-                  <div className="pt-4 space-y-2">
+                  <div className="pt-4 space-y-2 text-gray-800">
                     <p className="flex items-center space-x-3 text-lg">
                       <span className="text-amber-brand">📞</span>
-                      <a href="tel:+" className="hover:underline">
-                        Phone: +[Insert]
+                      <a href="tel:+971 55 2268150" className="hover:underline">
+                        Phone: +971 55 2268150
                       </a>
                     </p>
 
                     <p className="flex items-center space-x-3 text-lg">
                       <span className="text-amber-brand">📧</span>
-                      <a href="mailto:info@" className="hover:underline">
-                        Email: info@[insert].com
+                      <a
+                        href="mailto:info@alfatradingco.com"
+                        className="hover:underline"
+                      >
+                        Email: info@alfatradingco.com
                       </a>
                     </p>
                   </div>
@@ -180,9 +56,18 @@ function ContactUs() {
                   Our Location
                 </h3>
                 <div className="h-64 w-full bg-gray-200 flex items-center justify-center rounded-lg">
-                  <span className="text-gray-500">
+                  {/* <span className="text-gray-500">
                     [Optional Google Map Embed Placeholder]
-                  </span>
+                  </span> */}
+
+                  <iframe
+                    title="Our Location"
+                    width="100%"
+                    height="100%"
+                    loading="lazy"
+                    allowFullScreen
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.971352662594!2d55.133962687140645!3d25.06896007963949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cad462eb9f3%3A0xe631d001b6b1c0fb!2sFortune%20Tower%20-%20Al%20Thanyah%20Fifth%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1763381497214!5m2!1sen!2sin"
+                  ></iframe>
                 </div>
               </div>
             </div>
