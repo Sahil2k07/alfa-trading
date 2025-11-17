@@ -123,3 +123,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* alfa blue */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cc7823; /* alfa orange */
+  border-radius: 8px;
+  border: 2px solid #111827; /* creates a gap/border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e08d3a; /* lighter orange on hover */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cc7823 #111827; /* thumb color | track color */
+}
