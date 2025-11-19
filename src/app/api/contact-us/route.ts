@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: "API hit successfully",
+      message: "Form submitted successfully",
     });
   } catch (error) {
     return NextResponse.json(

@@ -83,6 +83,10 @@ export const generateContactEmailPayload = (
             }
             
             @media only screen and (max-width: 600px) {
+                body {
+                    width: 100% !important;
+                    min-width: 100% !important;
+                }
                 .container {
                     width: 100% !important;
                     border-radius: 0;
@@ -95,22 +99,26 @@ export const generateContactEmailPayload = (
                     display: block;
                     width: 100% !important;
                     text-align: left !important;
-                    padding: 12px 20px !important;
+                    padding: 12px 15px !important;
                 }
                 .header-text h1 {
                     font-size: 24px !important;
+                }
+                .mobile-padding {
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
                 }
             }
         </style>
     </head>
     <body style="margin: 0; padding: 0; background-color: #f3f4f6;">
 
-        <center style="width: 100%; table-layout: fixed; padding: 40px 20px;">
+        <center style="width: 100%; table-layout: fixed; padding: 40px 0;">
             <div class="container" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);">
 
                 <table role="presentation" class="gradient-header" style="background: linear-gradient(135deg, ${PRIMARY_COLOR} 0%, #ff6b6b 100%); width: 100%; border-radius: 16px 16px 0 0;">
                     <tr>
-                        <td align="center" class="header-text" style="padding: 50px 30px;">
+                        <td align="center" class="header-text mobile-padding" style="padding: 50px 30px;">
                             <div class="badge" style="display: inline-block; background-color: rgba(255, 255, 255, 0.2); color: #ffffff; padding: 6px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
                                 🔔 New Lead Alert
                             </div>
@@ -126,7 +134,7 @@ export const generateContactEmailPayload = (
 
                 <table role="presentation" style="width: 100%; padding: 40px 0 0 0;">
                     <tr>
-                        <td style="padding: 20px 30px 20px 30px;">
+                        <td class="mobile-padding" style="padding: 20px 30px 20px 30px;">
                             <div style="display: inline-block; background: linear-gradient(135deg, ${PRIMARY_COLOR}15 0%, #ff6b6b15 100%); padding: 8px 16px; border-radius: 8px; margin-bottom: 16px;">
                                 <h2 style="margin: 0; font-size: 18px; color: ${PRIMARY_COLOR}; font-weight: 700; letter-spacing: 0.5px;">
                                     📋 CONTACT DETAILS
@@ -135,7 +143,7 @@ export const generateContactEmailPayload = (
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 30px 30px 30px;">
+                        <td class="mobile-padding" style="padding: 0 30px 30px 30px;">
                             <table role="presentation" class="content-table" style="width: 100%; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
                                 ${infoRows}
                             </table>
@@ -143,10 +151,10 @@ export const generateContactEmailPayload = (
                     </tr>
                 </table>
 
-                <table role="presentation" style="width: 100%; padding: 0 0 50px 0;">
+                <table role="presentation" style="width: 100%; padding: 0 0 60px 0;">
                     <tr>
-                        <td style="padding: 0 30px 20px 30px;">
-                            <div style="display: inline-block; background: linear-gradient(135deg, ${PRIMARY_COLOR}15 0%, #ff6b6b15 100%); padding: 8px 16px; border-radius: 8px; margin-bottom: 16px;">
+                        <td class="mobile-padding" style="padding: 0 30px 20px 30px;">
+                            <div style="background: linear-gradient(135deg, ${PRIMARY_COLOR}15 0%, #ff6b6b15 100%); padding: 8px 16px; border-radius: 8px; margin-bottom: 16px; display: block;">
                                 <h2 style="margin: 0; font-size: 18px; color: ${PRIMARY_COLOR}; font-weight: 700; letter-spacing: 0.5px;">
                                     💬 MESSAGE
                                 </h2>
@@ -154,13 +162,12 @@ export const generateContactEmailPayload = (
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 0 30px 0 30px;">
+                        <td class="mobile-padding" style="padding: 0 30px 0 30px;">
                             <div style="background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%); padding: 24px; border-radius: 12px; border-left: 4px solid ${PRIMARY_COLOR}; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
-                                <p style="margin: 0; font-size: 15px; line-height: 1.7; color: ${DARK_TEXT_COLOR}; white-space: pre-wrap; word-break: break-word;">
-                                    ${data.message}
-                                </p>
+                                ${data.message}
                             </div>
                         </td>
+
                     </tr>
                 </table>
 
