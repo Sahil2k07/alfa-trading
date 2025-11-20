@@ -25,8 +25,17 @@ function ContactUs() {
                   <p className="text-lg font-semibold">
                     Alfa Trading House DMCC
                   </p>
+
                   <p className="text-lg text-gray-600">
-                    Dubai Multi Commodities Centre (DMCC), UAE
+                    Unit No: 308 Fortune Tower Plot No: JLT-PH1-C1A Jumeirah
+                    Lakes Towers, Dubai, UAE
+                  </p>
+
+                  <p className="flex items-center space-x-3 text-lg">
+                    <span className="text-amber-brand">🔖</span>
+                    <a href="tel:+971 55 2268150" className="hover:underline">
+                      Registration Number: DMCC193705
+                    </a>
                   </p>
 
                   <div className="pt-4 space-y-2 text-gray-800">
