@@ -27,25 +27,40 @@ function ContactUs() {
                   </p>
 
                   <p className="text-lg text-gray-600">
-                    Unit No: 308 Fortune Tower Plot No: JLT-PH1-C1A Jumeirah
-                    Lakes Towers, Dubai, UAE
+                    Unit No: 308, Fortune Tower, Cluster-C <br />
+                    Jumeirah Lakes Towers, Dubai, UAE
                   </p>
 
+                  {/* PO Box */}
+                  <p className="flex items-center space-x-3 text-lg">
+                    <span className="text-amber-brand">📮</span>
+                    <span>PO Box: 29159</span>
+                  </p>
+
+                  {/* Registration Number */}
                   <p className="flex items-center space-x-3 text-lg">
                     <span className="text-amber-brand">🔖</span>
-                    <a href="tel:+971 55 2268150" className="hover:underline">
-                      Registration Number: DMCC193705
-                    </a>
+                    <span>Registration Number: DMCC193705</span>
                   </p>
 
                   <div className="pt-4 space-y-2 text-gray-800">
+                    {/* Landline */}
                     <p className="flex items-center space-x-3 text-lg">
-                      <span className="text-amber-brand">📞</span>
-                      <a href="tel:+971 55 2268150" className="hover:underline">
-                        Phone: +971 55 2268150
+                      <span className="text-amber-brand">☎️</span>
+                      <a href="tel:+97142829455" className="hover:underline">
+                        Telephone: +971 4 282 9455
                       </a>
                     </p>
 
+                    {/* Mobile */}
+                    <p className="flex items-center space-x-3 text-lg">
+                      <span className="text-amber-brand">📞</span>
+                      <a href="tel:+971552268150" className="hover:underline">
+                        Mobile: +971 55 226 8150
+                      </a>
+                    </p>
+
+                    {/* Email */}
                     <p className="flex items-center space-x-3 text-lg">
                       <span className="text-amber-brand">📧</span>
                       <a
